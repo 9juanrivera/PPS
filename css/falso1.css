@@ -1,0 +1,119 @@
+body{
+
+  background:black;
+  color:white;
+
+  font-family:monospace;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  height:100vh;
+
+  overflow:hidden;
+
+}
+
+.container{
+
+  text-align:center;
+
+}
+
+input{
+
+  background:black;
+  color:white;
+
+  border:1px solid white;
+
+  padding:10px;
+
+}
+
+button{
+
+  margin-top:20px;
+
+  padding:10px 20px;
+
+  border:none;
+
+  cursor:pointer;
+
+}
+
+#final{
+
+  display:none;
+
+  margin-top:40px;
+
+  animation:aparecer 0.5s;
+
+}
+
+#dedo{
+
+  font-size:120px;
+
+  animation:shake 0.2s infinite;
+
+}
+
+#idiota{
+
+  color:red;
+
+  font-size:70px;
+
+  letter-spacing:8px;
+
+  animation:parpadeo 0.2s infinite;
+
+}
+
+@keyframes shake{
+
+  0%{
+    transform:translate(2px);
+  }
+
+  50%{
+    transform:translate(-2px);
+  }
+
+  100%{
+    transform:translate(2px);
+  }
+
+}
+
+@keyframes parpadeo{
+
+  0%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:1;
+  }
+
+}
+
+@keyframes aparecer{
+
+  from{
+    transform:scale(0);
+  }
+
+  to{
+    transform:scale(1);
+  }
+
+}

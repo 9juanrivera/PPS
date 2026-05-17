@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>El Enigma</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>
+      ¿--.- ..- .. . .-. . ...   . -- .--. . --.. .- .-. ?
+    </h1>
+
+    <input
+      type="text"
+      id="respuesta"
+      autocomplete="off"
+    >
+
+    <button onclick="verificar()">
+      Entrar
+    </button>
+
+    <p id="mensaje"></p>
+
+    <button
+      id="fakeButton"
+      onclick="caminoFalso()"
+    >
+      ...
+    </button>
+
+  </div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
