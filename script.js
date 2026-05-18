@@ -14,7 +14,7 @@ function verificar(){
   if(respuesta == "si"){
 
     window.location.href =
-    "pages/puzzle1.html";
+    "puzzle1.html";
 
   }
 
